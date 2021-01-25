@@ -5,6 +5,11 @@
 - clean: ['~']
 
 - link:
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/derevenets: fish/derevenets
+    ~/.config/fish/completions: fish/completions
+    ~/.config/fish/functions: fish/functions
+
     ~/.tmux.conf: .tmux.conf
     ~/.bash_profile: .bash_profile
 
