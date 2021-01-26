@@ -11,8 +11,10 @@
     ~/.config/fish/functions: fish/functions
 
     ~/.tmux.conf: .tmux.conf
+
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
+    ~/.bash_aliases: .bash_aliases
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

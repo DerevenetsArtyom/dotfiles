@@ -80,20 +80,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -113,28 +100,7 @@ if [ -f ~/.bash_profile ]; then
    source ~/.bash_profile
 fi
 
-# TERMINAL PROMPT VERSIONS
-# First basic vesrion
-# export PS1='\u:\w\$ '
-
-# Not applicable anymore (since I moved to fish)
-# \e[...m" --becomes--> "\[\e[...m\]"
+# TERMINAL PROMPT VERSIONS (for bash only, fish has it's own one)
 export PS1='(bash)\[\e[0;32m\]\w\$ \[\e[m\]'
-
-alias ven='virtualenv env -p /usr/bin/python3.6 --no-site-packages'
-
-alias fix_pych='killall ibus-x11'
-
-# REMOVE EXITED CONTAINERS
-alias docker_rm_cont='docker rm $(docker ps -q -f status=exited)'
-
-# REMOVE NONE IMAGES
-alias docker_rm_images='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
-
-# CHANGE USER 
-alias ch_user='sudo chown -R $USER:$USER .'
-
-# ACTIVATE VENV INSIDE CURRENT DIR
-alias vactive='source env/bin/activate'
 
 fish
