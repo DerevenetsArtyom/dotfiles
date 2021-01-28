@@ -16,6 +16,8 @@
     ~/.bashrc: .bashrc
     ~/.bash_aliases: .bash_aliases
 
+    ~/.fonts/Monaco.ttf: fonts/Monaco.ttf
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
