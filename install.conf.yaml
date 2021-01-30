@@ -4,7 +4,6 @@
 
 - clean: ['~']
 
-
 - create:
     - ~/.config/fish
     - ~/.fonts
@@ -25,4 +24,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - command: ./bootstrap.sh
+    description: Install initial packages
+    stdin: true
+    stdout: true
 
