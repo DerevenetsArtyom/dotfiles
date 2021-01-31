@@ -102,5 +102,3 @@ fi
 
 # TERMINAL PROMPT VERSIONS (for bash only, fish has it's own one)
 export PS1='(bash)\[\e[0;32m\]\w\$ \[\e[m\]'
-
-fish
