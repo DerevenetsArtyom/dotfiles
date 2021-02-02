@@ -17,7 +17,9 @@
     ~/.tmux.conf: .tmux.conf
 
     ~/.bash_profile: .bash_profile
-    ~/.bashrc: .bashrc
+    ~/.bashrc:
+      path: .bashrc
+      force: true
     ~/.bash_aliases: .bash_aliases
 
     ~/.fonts/Monaco.ttf: fonts/Monaco.ttf
