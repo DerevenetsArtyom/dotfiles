@@ -7,8 +7,7 @@ sudo apt-get update -y && sudo apt-get upgrade
 
 
 echo -e "\n### \t Install required packages \n"
-sudo apt-get install fish wget unzip cmake
-
+sudo apt-get install fish wget unzip cmake fontconfig
 
 echo -e "\n### \t Set 'fish' as a default shell \n"
 sudo chsh -s /usr/bin/fish
@@ -27,3 +26,7 @@ VER="0.17.1"
 wget https://github.com/sharkdp/bat/releases/download/v${VER}/bat_${VER}_amd64.deb
 sudo dpkg -i bat_${VER}_amd64.deb
 rm -f bat_${VER}_amd64.deb
+
+
+echo -e "\n### \t Updating fonts \n"
+sudo fc-cache -f -v
