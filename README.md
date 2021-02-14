@@ -23,6 +23,13 @@ It has been tested on (in Vagrant):
 * Ubuntu 18.04 (bionic64)
 * Ubuntu 20.04 (focal64)
 
+### Fonts installation
+
+In case of the script does not install forts correctly or you want to set up your code editor (PyCharm in my case) with the same Monaco font, check following articles:
+* [Install Monaco font in Linux](https://gist.github.com/rogerleite/99819)
+* [Monaco font for IDE](https://github.com/probil/Monaco-IDE-font)
+
+
 ### Things to do in the future
 
 - [ ] Check and list generic packages for comfort work (messengers, browser etc )
