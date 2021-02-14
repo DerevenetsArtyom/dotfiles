@@ -30,3 +30,13 @@ rm -f bat_${VER}_amd64.deb
 
 echo -e "\n### \t Updating fonts \n"
 sudo fc-cache -f -v
+
+
+echo -e "\n### \t Preparation for installing Python ... \n"
+sudo apt update -y
+sudo apt install software-properties-common
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+
+echo -e "\n### \t Installing Python 3.8, pip3 and related stuff \n"
+sudo apt install -y python3.8 python3-pip python3-venv
+sudo apt install -y build-essential libssl-dev libffi-dev libsqlite3-dev python3-dev
